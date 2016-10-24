@@ -1,5 +1,5 @@
 ## Build
-docker build -t ma-image .
+docker build -t go-example .
 
 ## Run
-docker run -it --rm --name ma-instance -p 8080:8080 -v /app/MathApp:/go/src/MathApp -w /go/src/MathApp ma-image
+docker run -it --rm --name go-instance -p 8084:8084 -v ./go-example:/go/src/MathApp -w /go/src/MathApp go-example

@@ -1,0 +1,6 @@
+version '1.0'
+steps:
+    unit-test-jim:
+        image: golang:latest
+        commands:
+          - go test
